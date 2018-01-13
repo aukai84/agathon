@@ -34,12 +34,12 @@ class App extends Component {
         <div className="task-card-container">
             <Row>
                 {this.state.tasks.map(task => (
-                <div className="task-container">
-                    <Col xs="12" sm="12" md="6" lg="4" xl="4">
+                <Col xs="12" sm="12" md="6" lg="4" xl="4">
+                    <div>
                         <h4>{task.title}</h4>
                         <p>Last Log: 1/13/18</p>
-                    </Col>
-                </div>
+                    </div>
+                </Col>
                 ))}    
             </Row>
         </div>
