@@ -38,6 +38,96 @@
                {"label": "Person Responsible", "type":"string"}
                ],
             "related-forms": [1, 2]
+        },
+        {"uid": 4,
+            "category": "risk assessment",
+            "title": "Previous Land Use and Site Selection",
+            "fields": [
+               {"label": "Inspection Date", "type": "string"},
+               {"label": "Location/Field", "type": "string"},
+               {"label": "Physical, Chemical, and/or Biological Contamination Identified", "type": "string"},
+               {"label": "Corrective and/or Preventive Actions", "description" : "(if needed)","type": "string"},
+               {"label": "Identified By", "type": "string"},
+               {"label": "Date Corrective Action Completed", "type": "string"},
+               {"label": "Completed By", "type":"string"}
+               ]
+        },
+        {"uid": 5,
+            "category": "risk assessment",
+            "title": "Animals",
+            "fields": [
+               {"label": "Inspection Date", "type": "string"},
+               {"label": "Location/Field", "type": "string"},
+               {"label": "Animal Contamination Identified", "type": "string"},
+               {"label": "Corrective and/or Preventive Actions", "description" : "(if needed)","type": "string"},
+               {"label": "Identified By", "type": "string"},
+               {"label": "Date Corrective Action Completed", "type": "string"},
+               {"label": "Completed By", "type":"string"}
+               ]
+        },
+        {"uid": 6,
+            "category": "risk assessment",
+            "title": "Packinghouse Activity",
+            "fields": [
+               {"label": "Inspection Date", "type": "string"},
+               {"label": "Location/Field", "type": "string"},
+               {"label": "Risks Identified", "type": "string"},
+               {"label": "Corrective and/or Preventive Actions", "description" : "(if needed)","type": "string"},
+               {"label": "Identified By", "type": "string"},
+               {"label": "Date Corrective Action Completed", "type": "string"},
+               {"label": "Completed By", "type":"string"}
+               ]
+        },
+        {"uid": 7,
+            "category": "risk assessment",
+            "title": "Field Assessment",
+            "fields": [
+               {"label": "Inspection Date", "type": "string"},
+               {"label": "Location/Field", "type": "string"},
+               {"label": "Risks Identified", "type": "string"},
+               {"label": "Corrective and/or Preventive Actions", "description" : "(if needed)","type": "string"},
+               {"label": "Identified By", "type": "string"},
+               {"label": "Date Corrective Action Completed", "type": "string"},
+               {"label": "Completed By", "type":"string"}
+               ]
+        },
+        {"uid": 8,
+            "category": "risk assessment",
+            "title": "Agricultural Water",
+            "fields": [
+               {"label": "Inspection Date", "type": "string"},
+               {"label": "Water Source", "type": "string"},
+               {"label": "Risks Identified", "type": "string"},
+               {"label": "Corrective and/or Preventive Actions", "description" : "(if needed)","type": "string"},
+               {"label": "Identified By", "type": "string"},
+               {"label": "Date Corrective Action Completed", "type": "string"},
+               {"label": "Completed By", "type":"string"}
+               ]
+        },
+        {"uid": 9,
+            "title": "Personal Hygiene Facilities Cleaning Log",
+            "fields": [
+               {"label": "Date and Time of Cleaning", "type": "string"},
+               {"label": "Assessment of Facility", "description": "(e.g. do toilets need emptying, are extra supplies needed, etc)", "type": "string"},
+               {"label": "Are there paper towels?", "type": "checkbox"},
+               {"label": "Is there soap?", "type": "checkbox"},
+               {"label": "Is the water source working?", "type": "checkbox"},
+               {"label": "Is there toilet paper?", "type": "checkbox"},
+               {"label": "Is the garbage emptied?", "type": "checkbox"},
+               {"label": "Who did the cleaning?", "type": "string"}
+               ]
+        },
+        {"uid": 10,
+            "title": "Product Information",
+            "fields": [
+               {"label": "Product", "type": "string"},
+               {"label": "Lot Number/Code/Date", "type": "string"},
+               {"label": "Quantity Shipped", "type": "checkbox"},
+               {"label": "Shipped to (name)", "type": "checkbox"},
+               {"label": "Date Shipped", "type": "checkbox"},
+               {"label": "Quantity Left on Farm", "type": "checkbox"},
+               {"label": "Quantity Shipped and Requiring Recovery", "type": "checkbox"}
+               ]
         }
     ]
 }
