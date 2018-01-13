@@ -1,0 +1,43 @@
+{
+    "forms": [
+        {"uid": 1,
+         "title": "Water Testing Result Log",
+         "fields": [
+             {"label": "Date", "type": "string"},
+             {"label": "Water Source", "description": "(type/location/name)", "type": "string"},
+             {"label": "Laboratory", "type": "string"},
+             {"label": "Type of test performed", "type": "string"},
+             {"label": "Results", "type":"string"},
+             {"label": "Corrective Actions", "description": "(if needed)", "type": "string"},
+             {"label": "Initials", "type": "string"}
+            ],
+        "related-form-uids": [2, 3]
+        },
+        {"uid": 2,
+         "title": "Water Treatment Log",
+         "fields": [
+            {"label": "Date", "type": "string"},
+            {"label": "Water pH Level", "type": "number"},
+            {"label": "Type of Chemical Used", "type": "string"},
+            {"label": "Amount Added", "type": "string"},
+            {"label": "Type of Produce Being Run", "type":"string"},
+            {"label": "Corrective Actions", "type": "string"},
+            {"label": "Initials", "type": "string"}
+            ],
+         "related-forms": [1, 3]
+        },
+        {"uid": 3,
+            "title": "Water Temperature Control and Monitoring",
+            "fields": [
+               {"label": "Date", "type": "string"},
+               {"label": "Time", "type": "string"},
+               {"label": "Temperature of Water", "description" : "(C/f)","type": "number"},
+               {"label": "Temperature of Product", "description" : "(C/f)","type": "number"},
+               {"label": "Difference of Temps", "type": "number"},
+               {"label": "Corrected Action Taken", "description": "( e.g. cool product, hold, etc.)", "type": "string"},
+               {"label": "Person Responsible", "type":"string"}
+               ],
+            "related-forms": [1, 2]
+        }
+    ]
+}
