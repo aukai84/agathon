@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import {Row, Col, Container} from 'reactstrap';
-import './App.css';
+import './index.css';
+const farmForms = require('../../data/farmForms.json').forms;
 
 class App extends Component {
-  render() {
+    constructor(props){
+        super(props);
+        this.state = {
+            tasks:farmForms
+        }
+    }
+    render() {
+        
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
       </header>
         <div className="home-page-nav">
@@ -27,7 +33,14 @@ class App extends Component {
         </div>
         <div className="task-card-container">
             <Row>
-
+                {this.state.tasks.map(task => (
+                <div className="task-container">
+                    <Col xs="12" sm="12" md="6" lg="4" xl="4">
+                        <h4>{task.title}</h4>
+                        <p>Last Log: 1/13/18</p>
+                    </Col>
+                </div>
+                ))}    
             </Row>
         </div>
       </div>
