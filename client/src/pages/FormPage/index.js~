@@ -8,7 +8,7 @@ class FormPage extends Component {
     constructor(props){
         super(props);
         this.state = {
-            task: farmForms.filter(item => (item.uid == props.match.params.id))
+            task: farmForms.filter(item => (item.uid == props.match.params.id))[0]
         }
     }
 
@@ -16,7 +16,7 @@ class FormPage extends Component {
         console.log(this.state.task)
         return (
             <div className="form-page-container">
-
+                <div>{this.state.task.title}</div>
             </div>
         )
     }
