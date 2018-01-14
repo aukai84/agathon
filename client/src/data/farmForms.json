@@ -2,6 +2,7 @@
     "forms": [
         {"uid": 1,
          "title": "Water Testing Result Log",
+         "color": "",
          "fields": [
              {"label": "Date", "type": "string", "uid": "1"},
              {"label": "Water Source", "description": "(type/location/name)", "type": "string", "uid": "2"},
@@ -11,10 +12,11 @@
              {"label": "Corrective Actions", "description": "(if needed)", "type": "string", "uid": "6"},
              {"label": "Initials", "type": "string", "uid": "7"}
             ],
-        "related-forms-uids": [2, 3, 8]
+        "relatedFormUids": [2, 3, 8]
         },
         {"uid": 2,
          "title": "Water Treatment Log",
+         "color": "yellow",
          "fields": [
             {"label": "Date", "type": "string", "uid": "1"},
             {"label": "Water pH Level", "type": "number", "uid": "2"},
@@ -24,10 +26,11 @@
             {"label": "Corrective Actions", "type": "string", "uid": "6"},
             {"label": "Initials", "type": "string", "uid": "7"}
             ],
-         "related-forms-uids": [1, 3, 8]
+         "relatedFormUids": [1, 3, 8]
         },
         {"uid": 3,
             "title": "Water Temperature Control and Monitoring",
+            "color": "red",
             "fields": [
                {"label": "Date", "type": "string"},
                {"label": "Time", "type": "string"},
@@ -37,7 +40,7 @@
                {"label": "Corrected Action Taken", "description": "( e.g. cool product, hold, etc.)", "type": "string"},
                {"label": "Person Responsible", "type":"string"}
                ],
-            "related-forms-uids": [1, 2, 8]
+            "relatedFormUids": [1, 2, 8]
         },
         {"uid": 4,
             "category": "risk assessment",
@@ -103,7 +106,7 @@
                {"label": "Date Corrective Action Completed", "type": "string"},
                {"label": "Completed By", "type":"string"}
                ],
-            "related-forms-uids": [1, 2, 3]
+            "relatedFormUids": [1, 2, 3]
         },
         {"uid": 9,
             "title": "Personal Hygiene Facilities Cleaning Log",

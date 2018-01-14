@@ -21,7 +21,7 @@ class Tasks extends Component {
             <div className="tasks-container">
                 <Row>
                     {this.state.tasks.map(task => (
-                    <Col xs="12" sm="12" md="6" lg="3" xl="3">
+                    <Col xs="12" sm="12" md="6" lg="3" xl="3" className="task-tile">
                         <Link to={`/tasks/${task.uid}`}>
                             <div className="task-card">
                                 <h4>{task.title}</h4>

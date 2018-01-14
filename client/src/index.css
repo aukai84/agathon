@@ -3,3 +3,23 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.right {
+  text-align: right;
+}
+
+.avatar {
+  display: inline;
+  max-height: 100px;
+  width: auto;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.inline {
+  display: inline;
+}
+
+.grey {
+  color: grey;
+}

@@ -11,6 +11,7 @@ import {
 } from 'react-router-dom';
 import Tasks from '../Tasks';
 import FormPage from '../FormPage';
+import WizardPage from '../WizardPage';
 class App extends Component {
     constructor(props){
         super(props);
@@ -22,25 +23,32 @@ class App extends Component {
       <div className="App container">
         <div className="home-page-nav">
             <Row>
-                <Col className="home-nav-item">
+                <Col xs="5" className="home-nav-item">
                     <Link to="/">
                         <div className="profile-header">
-                            <h1>Farmer John</h1>
-                            <p>Farm Forms, North Shore</p>
+                        <Row>
+                                <Col xs="4">
+                                    <img src="farmerJohn.png" className="avatar"/>
+                                </Col>
+                                <Col xs="8">
+                                    <h1>Farmer John</h1>
+                                    <p>Farm Forms, North Shore</p>
+                                </Col>
+                            </Row>
                         </div>
                     </Link>
                 </Col>
-                <Col className="home-nav-item">
-                    <h3>Statistics</h3>
-                </Col>
-                <Col className="home-nav-item">
-                    <h3>Task  Manager</h3>
+                <Col xs="7" className="home-nav-item" right>
+                    <Link to="/wizards" className="grey">
+                        <h5 className="right grey">Form Walkthroughs</h5>
+                    </Link>
                 </Col>
             </Row>
         </div>
             <Switch>
                 <Route exact path="/" component={Tasks}/>
                 <Route path="/tasks/:id" component={FormPage}/>
+                <Route path="/wizards" component={WizardPage}/>
             </Switch>
       </div>
     );

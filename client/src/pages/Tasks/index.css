@@ -1,0 +1,21 @@
+.task-tile {
+    margin-bottom: 5px;
+}
+
+.task-card{
+    border:solid 2px black;
+    border-radius: .5em;
+    margin: 5px;
+}
+
+.task-card:hover{
+    background-color: #ccc;
+}
+
+.red{
+    background-color: lightcoral;
+}
+
+.yellow {
+    background-color: lightgoldenrodyellow;
+}
