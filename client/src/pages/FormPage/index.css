@@ -1,2 +1,29 @@
 form{
 }
+
+.center {
+    text-align: center;
+}
+
+.margin-top-30 {
+    margin: 30px;
+}
+
+.log-btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.inline {
+    display: inline;
+}
+
+.ReactTable .rt-thead {
+    overflow-y: scroll;
+}
+
+@media(min-width: 576px) {
+    .modal-dialog {
+        max-width: 800px !important;
+    }
+}

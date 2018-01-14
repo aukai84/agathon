@@ -25,26 +25,34 @@ class FormPage extends Component {
         })
     }
 
+    addNewLog(){
+
+    }
+
     render(){
         console.log(this.state.task)
         return (
             <div className="form-page-container">
                 <div>{this.state.task.title}</div>
-                <Button onClick={this.toggle} color="success" block>Create New Log</Button>
-
+                <Button className="log-btn" onClick={this.toggle} color="success" block>Create New Log</Button>
+                
                 <LogTable form_uid={this.props.match.params.id}/>
 
                 <Modal isOpen={this.state.modal} toggle={this.toggle}>
-                    <ModalHeader toggle={this.toggle}>Create New Log</ModalHeader>
+                    <ModalHeader className="log-btn" toggle={this.toggle}>Create New {this.state.task.title}</ModalHeader>
                     <ModalBody>
                     <div className="input-form-container">
                         <Form>
                             {this.state.task.fields.map(item => (
-                            <FormGroup>
-                                <Label for={item.label} className="input-label">{item.label}</Label>
-                                <Input id={item.label} type={item.type}/>
+                            <FormGroup row>
+                                        <Label for={item.label} sm={4} size="lg">{item.label}</Label>
+                                        <Col sm={8}>
+                                            <Input id={item.label} type={item.type} bsSize="lg"/>
+                                        </Col>
                             </FormGroup>
                             ))}
+
+                            <Button type="submit" onClick={this.addNewLog()} color="success" block>Submit</Button>
                         </Form>
                     </div>
                     </ModalBody>
