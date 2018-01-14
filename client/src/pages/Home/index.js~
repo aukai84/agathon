@@ -1,27 +1,34 @@
 import React, { Component } from 'react';
 import {Row, Col, Container} from 'reactstrap';
 import './index.css';
-const farmForms = require('../../data/farmForms.json').forms;
-
+import {
+    BrowserRouter as Router,
+    Link,
+    Switch,
+    Route,
+    Redirect,
+    withRouter
+} from 'react-router-dom';
+import Tasks from '../Tasks';
+import FormPage from '../FormPage';
 class App extends Component {
     constructor(props){
         super(props);
-        this.state = {
-            tasks:farmForms
-        }
+        this.state = {}
     }
     render() {
-        
+        console.log(this.state.tasks)
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-      </header>
         <div className="home-page-nav">
             <Row>
                 <Col className="home-nav-item">
-                    <h1>Farmer John</h1>
-                    <p>Farm Forms, North Shore</p>
+                    <Link to="/">
+                        <div className="profile-header">
+                            <h1>Farmer John</h1>
+                            <p>Farm Forms, North Shore</p>
+                        </div>
+                    </Link>
                 </Col>
                 <Col className="home-nav-item">
                     <h3>Statistics</h3>
@@ -31,18 +38,10 @@ class App extends Component {
                 </Col>
             </Row>
         </div>
-        <div className="task-card-container">
-            <Row>
-                {this.state.tasks.map(task => (
-                <Col xs="12" sm="12" md="6" lg="4" xl="4">
-                    <div>
-                        <h4>{task.title}</h4>
-                        <p>Last Log: 1/13/18</p>
-                    </div>
-                </Col>
-                ))}    
-            </Row>
-        </div>
+            <Switch>
+                <Route exact path="/" component={Tasks}/>
+                <Route path="/task/:id" component={FormPage}/>
+            </Switch>
       </div>
     );
   }
