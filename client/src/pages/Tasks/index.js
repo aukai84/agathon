@@ -25,7 +25,7 @@ class Tasks extends Component {
                         <Link to={`/tasks/${task.uid}`}>
                             <div className="task-card">
                                 <h4>{task.title}</h4>
-                                <p>Laste Log: 1/13/18</p>
+                                <p>Last Log: 1/13/18</p>
                             </div>
                         </Link>
                     </Col>

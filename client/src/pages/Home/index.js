@@ -19,7 +19,7 @@ class App extends Component {
     render() {
         console.log(this.state.tasks)
     return (
-      <div className="App">
+      <div className="App container">
         <div className="home-page-nav">
             <Row>
                 <Col className="home-nav-item">

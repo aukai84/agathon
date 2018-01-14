@@ -1,0 +1,33 @@
+{
+    "wizards": [
+        {"uid":"1", "title": "GAPGHP Audit Checklist Preparation", "section-list": "GAP-sections"},
+        {"uid":"2", "title": "Create Product Recall Notification", "section-list": "comingSoon"},
+        {"uid":"3", "title": "General Farm Inspection", "section-list": "comingSoon"},
+        {"uid":"4", "title": "Create a Food Safety Program", "section-list": "food-safety"},
+        {"uid":"5", "title": "Create a Food Traceability Program", "section-list": "comingSoon"}
+    ],
+    "comingSoon": [
+        {"title": "Coming Soon", "count": "", "questions":[0]}
+    ],
+    "GAP-sections": [
+        {"title": "Auditee and Farm Entity Questions", "count": "6", "questions": [1,2,3,4,5,6]},
+        {"title": "General Questions", "count": "", "questions": [7,8]},
+        {"title": "Farm Review", "count": "12", "questions": [0]},
+        {"title": "Field Harvest and Field Packing Activities", "count": "7", "questions": [0]},
+        {"title": "House Packing Facility", "count": "4", "questions": [0]},
+        {"title": "Storage and Transportation", "count": "10", "questions": [0]},
+        {"title": "Wholesale Distribution Center/Terminal Warehouse", "count": "12", "questions": [0]},
+        {"title": "Preventive Food Defense Procedures", "count": "9", "questions": [0]}
+    ],
+    "questions": {
+        "0": {"q": "Coming soon :)", "type": "none"},
+        "1": {"q": "Have you been trained in GAP & GHP?", "type": "yn"},
+        "2": {"q": "Is there a map that accurately represents the farm operations?", "type": "yn"},
+        "3": {"q": "Are all crop production areas located on the audit site?", "type": "yn"},
+        "4": {"q": "Does your company have more than 1 packing facility?", "type": "yn"},
+        "5": {"q": "Is there a floor plan of the packing house facility?", "desc": "indicating flow of product, storage areas, cull areas, employee break rooms, restrooms, offices, etc.", "type": "yn"},
+        "6": {"q": "Is any product commingled prior to packing?", "type": "yn"},
+        "7": {"q": "Who is the designated Food Safety Program Manager?", "type": "text", "fields": {"label":"full name", "type": "string"}},
+        "8": {"q": "Do you have a documented food safety program that incorprates GAP and/or GHP has been implemented?", "type": "yn", "no-flag": "This is mandatory to become GAP certified. Would you like to complete it now?", "wizard-redirect": 4}
+    }
+}

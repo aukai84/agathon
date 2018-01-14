@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import {Row, Col, Form, FormGroup, Input, Label, Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
 import {Link} from 'react-router-dom';
+import LogTable from '../../components/LogTable';
 import './index.css';
+import 'react-table/react-table.css';
 
 const farmForms = require('../../data/farmForms.json').forms;
 const userData = require('../../data/userData.json');
@@ -29,14 +31,9 @@ class FormPage extends Component {
             <div className="form-page-container">
                 <div>{this.state.task.title}</div>
                 <Button onClick={this.toggle} color="success" block>Create New Log</Button>
-                <div className="previous-logs-conntainer">
-                    {this.state.data.entries.map(entry => (
-                    <div>
-                        <p>{entry.date}</p>
-                        <p>{entry["water-source"]}</p>
-                    </div>
-                    ))}
-                </div>
+
+                <LogTable form_uid={this.props.match.params.id}/>
+
                 <Modal isOpen={this.state.modal} toggle={this.toggle}>
                     <ModalHeader toggle={this.toggle}>Create New Log</ModalHeader>
                     <ModalBody>
