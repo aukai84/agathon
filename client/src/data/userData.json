@@ -1,0 +1,48 @@
+{
+    "user": "Farmer John",
+    "data": {
+        "1": {
+            "entries": [
+                {"date": "01/01/2018", "water-source": "irrigation", "laboratory": "Aloha Labs", "type-of-test": "bacteria", "results": "negative", "corrective-action": "", "initials": "KF"},
+                {"date": "01/03/2018", "water-source": "unfiltered", "laboratory": "Aloha Labs", "type-of-test": "bacteria", "results": "negative", "corrective-action": "", "initials": "KF"},
+                {"date": "01/05/2018", "water-source": "irrigation", "laboratory": "Aloha Labs", "type-of-test": "bacteria", "results": "negative", "corrective-action": "", "initials": "KF"},
+                {"date": "01/07/2018", "water-source": "unfiltered", "laboratory": "Aloha Labs", "type-of-test": "bacteria", "results": "positive", "corrective-action": "clean", "initials": "KF"},
+                {"date": "01/10/2018", "water-source": "irrigation", "laboratory": "Aloha Labs", "type-of-test": "bacteria", "results": "negative", "corrective-action": "", "initials": "KF"}
+            ],
+            "filters": {
+                "filter-key": "water-source",
+                "values": ["irrigation", "unfiltered"]
+            }
+        },
+        "2": {
+            "entries": [
+                {"date": "01/01/2018", "water-ph-level":"6.3", "type-of-chemical": "", "amount-added": "0", "type-of-produce": "tomatoes", "corrective-action": "none", "initials": "AT"},
+                {"date": "01/02/2018", "water-ph-level":"6.8", "type-of-chemical": "nitric acid", "amount-added": "75mg", "type-of-produce": "tomatoes", "corrective-action": "reduce pH", "initials": "KF"},
+                {"date": "01/03/2018", "water-ph-level":"7.2", "type-of-chemical": "nitric acid", "amount-added": "125mg", "type-of-produce": "tomatoes", "corrective-action": "reduce pH", "initials": "AT"},
+                {"date": "01/04/2018", "water-ph-level":"7.0", "type-of-chemical": "nitric acid", "amount-added": "125mg", "type-of-produce": "tomatoes", "corrective-action": "reduce pH", "initials": "KF"},
+                {"date": "01/05/2018", "water-ph-level":"6.5", "type-of-chemical": "nitric acid", "amount-added": "80mg", "type-of-produce": "tomatoes", "corrective-action": "reduce pH", "initials": "KF"},
+                {"date": "01/06/2018", "water-ph-level":"6.2", "type-of-chemical": "nitric acid", "amount-added": "50mg", "type-of-produce": "tomatoes", "corrective-action": "reduce pH", "initials": "KF"},
+                {"date": "01/07/2018", "water-ph-level":"5.8", "type-of-chemical": "nitric acid", "amount-added": "0", "type-of-produce": "tomatoes", "corrective-action": "none", "initials": "KF"},
+                {"date": "01/01/2018", "water-ph-level":"5.3", "type-of-chemical": "", "amount-added": "0", "type-of-produce":"carrots", "corrective-action": "none", "initials": "AT"},
+                {"date": "01/02/2018", "water-ph-level":"5.4", "type-of-chemical": "", "amount-added": "0", "type-of-produce": "carrots", "corrective-action": "none", "initials": "KF"},
+                {"date": "01/03/2018", "water-ph-level":"5.3", "type-of-chemical": "", "amount-added": "0", "type-of-produce": "carrots", "corrective-action": "none", "initials": "AT"},
+                {"date": "01/04/2018", "water-ph-level":"5.1", "type-of-chemical": "", "amount-added": "0", "type-of-produce": "carrots", "corrective-action": "none", "initials": "KF"},
+                {"date": "01/05/2018", "water-ph-level":"5.4", "type-of-chemical": "", "amount-added": "0", "type-of-produce": "carrots", "corrective-action": "none", "initials": "KF"},
+                {"date": "01/06/2018", "water-ph-level":"5.4", "type-of-chemical": "", "amount-added": "0", "type-of-produce": "carrots", "corrective-action": "none", "initials": "KF"},
+                {"date": "01/07/2018", "water-ph-level":"5.5", "type-of-chemical": "", "amount-added": "0", "type-of-produce": "carrots", "corrective-action": "none", "initials": "KF"},
+                {"date": "01/01/2018", "water-ph-level":"7.8", "type-of-chemical": "nitric acid", "amount-added": "100mg", "type-of-produce":"lettuce", "corrective-action": "none", "initials": "AT"},
+                {"date": "01/02/2018", "water-ph-level":"7.5", "type-of-chemical": "nitric acid", "amount-added": "100mg", "type-of-produce": "lettuce", "corrective-action": "none", "initials": "KF"},
+                {"date": "01/03/2018", "water-ph-level":"7.3", "type-of-chemical": "nitric acid", "amount-added": "100mg", "type-of-produce": "lettuce", "corrective-action": "none", "initials": "AT"},
+                {"date": "01/04/2018", "water-ph-level":"7.2", "type-of-chemical": "nitric acid", "amount-added": "100mg", "type-of-produce": "lettuce", "corrective-action": "none", "initials": "KF"},
+                {"date": "01/05/2018", "water-ph-level":"6.8", "type-of-chemical": "nitric acid", "amount-added": "100mg", "type-of-produce": "lettuce", "corrective-action": "none", "initials": "KF"},
+                {"date": "01/06/2018", "water-ph-level":"6.5", "type-of-chemical": "nitric acid", "amount-added": "100mg", "type-of-produce": "lettuce", "corrective-action": "none", "initials": "KF"},
+                {"date": "01/07/2018", "water-ph-level":"6.4", "type-of-chemical": "nitric acid", "amount-added": "100mg", "type-of-produce": "lettuce", "corrective-action": "none", "initials": "KF"}
+            ],
+            "filters": {
+                "filter-key": "type-of-produce",
+                "values": ["tomatoes", "carrots", "lettuce"]
+            }
+        }
+
+    }
+}
